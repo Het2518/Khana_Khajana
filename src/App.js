@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const header = () => {
+    return(
+        <div className="header">
+            <div className="logo-item">
+                <img src="file:///C:/Users/HET/Downloads/khana-khajana-high-resolution-logo-black-transparent.svg" alt="logo" />
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
 }
 
-export default App;
+const AppLayout = () => {
+    return (
+        <div className="app">
+
+        </div>
+    )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<AppLayout />)
